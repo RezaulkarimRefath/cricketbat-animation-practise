@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criket animation</title>
+    <style>
+        .field {
+            border: 2px solid black;
+        }
+
+        .bat {
+            transition: transform 1s;
+        }
+
+        .ball {
+            height: 3rem;
+            width: 3rem;
+            background-color: red;
+            position: relative;
+            border-radius: 50%;
+            left: 54%;
+            transition: transform 0.1ms ease-out 1s ;
+            
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: right top;
+        }
+
+        .field:hover .ball {
+            transform: translate(100rem);
+
+        } 
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="field">
+        <img src="bat.jpg" alt="" class="bat">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
